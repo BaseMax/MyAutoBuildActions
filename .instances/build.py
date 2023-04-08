@@ -2,23 +2,23 @@
 VARIABLES = [
   {
     "Key": "Primary Color",
-    "File": "
+    "File": "",
     "Regex": "",
   },
   {
     "Key": "Secondly Color",
-    "File": "
+    "File": "",
     "Regex": "",
   },
   {
     "Key": "Full Name",
-    "File": "",
-    "Regex": "",
+    "File": "MyTestApp/app.json",
+    "Regex": "\"name\"\: \"([^\"]+)\",",
   },
   {
     "Key": "App Name",
-    "File": "",
-    "Regex": "",
+    "File": "MyTestApp/app.json",
+    "Regex": "\"displayName\"\: \"([^\"]+)\",",
   },
 ]
 
