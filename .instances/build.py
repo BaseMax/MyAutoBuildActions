@@ -1,15 +1,15 @@
 # ================================ CONFIG ================================
 VARIABLES = [
-  {
-    "Key": "Primary Color",
-    "File": "",
-    "Regex": "",
-  },
-  {
-    "Key": "Secondly Color",
-    "File": "",
-    "Regex": "",
-  },
+  #{
+  #  "Key": "Primary Color",
+  #  "File": "",
+  #  "Regex": "",
+  #},
+  #{
+  #  "Key": "Secondly Color",
+  #  "File": "",
+  #  "Regex": "",
+  #},
   {
     "Key": "Full Name",
     "File": "MyTestApp/app.json",
