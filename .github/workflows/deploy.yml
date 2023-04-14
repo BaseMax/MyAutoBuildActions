@@ -1,1 +1,42 @@
-soon
+name: issue-to-hugo-post
+description: get issues and run an some code on rep files
+inputs:
+  OWNER:
+    required: true
+    description: owner of the repo can be either user or organization
+
+  REPO:
+    required: true
+    description: the name of the repository
+
+  PUB_DIR:
+    required: true
+    description: hugo publish directory which data will download there
+
+  DEBUG:
+    required: false
+    description: set to True to be verbose
+
+  LABELS:
+    required: true
+    description: colon seprated list of labels which should download
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v2
+    - run: echo runing
+      shell: bash
+    - id: the-testing-id
+      run: pip3 install requests.txt
+      shell: bash
+    - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
+      shell: bash
+    - run: issuedlr.py
+      shell: bash
+      env:
+        REPO: ${{ inputs.REPO }}
+        OWNER: ${{ inputs.OWNER }}
+        PUB_DIR: ${{ inputs.PUB_DIR }}
+        DEBUG: ${{ inputs.DEBUG }}
+        LABELS: ${{ inputs.LABELS }}
