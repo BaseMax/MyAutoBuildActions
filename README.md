@@ -1,4 +1,6 @@
-# Get GitHub Issues
+# My Auto ReactNative Build (Actions)
+
+A python script to automaticly create a clone of your react native application and auto replace based on given regexs.
 
 A Python script to get a list of all open issues in a repository with specific labels, and fetch their corresponding bodies and comments in chronological order (oldest to newest).
 
